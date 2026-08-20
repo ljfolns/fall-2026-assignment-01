@@ -19,5 +19,5 @@ export type Shape = Circle | Rectangle | Square;
 export function calculateArea(shape: Shape): number {
   if (shape.kind == "rectangle") return shape.width * shape.height;
   if (shape.kind == "square") return shape.sideLength * shape.sideLength;
-  return Math.PI * (shape.radius ** 2)
+  return Math.PI * (shape.radius ** 2);
 }

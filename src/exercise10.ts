@@ -31,7 +31,7 @@ export class UserRegistry {
   ): Readonly<Pick<UserAccount, 'id' | 'email' | 'profile'>> | undefined {
     const user: UserAccount = <UserAccount> this.register.find((u) => u.id == id);
     user.passwordHash = undefined;
-    Object.freeze(user)
+    Object.freeze(user);
     return user;
   }
 }

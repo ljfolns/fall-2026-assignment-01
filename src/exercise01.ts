@@ -6,5 +6,5 @@ export function formatName(
   if (middleName != null && middleName.length > 0)
     return `${lastName}, ${firstName} ${middleName.charAt(0)}.`;
 
-  return `${lastName}, ${firstName}`
+  return `${lastName}, ${firstName}`;
 }

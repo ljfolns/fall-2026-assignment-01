@@ -16,6 +16,6 @@ export function extractAdmins(
   users: Array<AdminUser | GuestUser>,
 ): AdminUser[] {
   return users.filter((user) => {
-    return isAdmin(user)
+    return isAdmin(user);
   });
 }
